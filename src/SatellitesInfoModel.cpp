@@ -79,6 +79,8 @@ void CSatellitesInfoModel::update(const QList<QGeoSatelliteInfo>& satellites, bo
         {
             m_setSatInUse << satInfo.satelliteIdentifier();
         }
+
+        emit inUseCountChanged();
     }
     else
     {
@@ -87,5 +89,17 @@ void CSatellitesInfoModel::update(const QList<QGeoSatelliteInfo>& satellites, bo
         m_lstSatInView = satellites;
 
         endResetModel();
+
+        emit inViewCountChanged();
     }
+}
+
+int CSatellitesInfoModel::inViewCount() const
+{
+    return m_lstSatInView.count();
+}
+
+int CSatellitesInfoModel::inUseCount() const
+{
+    return m_setSatInUse.count();
 }

@@ -11,6 +11,9 @@ class CSatellitesInfoModel : public QAbstractListModel, public QQmlParserStatus
 {
     Q_OBJECT
 
+    Q_PROPERTY(int inViewCount READ inViewCount NOTIFY inViewCountChanged)
+    Q_PROPERTY(int inUseCount READ inUseCount NOTIFY inUseCountChanged)
+
     Q_INTERFACES(QQmlParserStatus)
 
 public:
@@ -41,6 +44,13 @@ public:
 public:
     void classBegin() {}
     void componentComplete();
+
+    int inViewCount() const;
+    int inUseCount() const;
+
+signals:
+    void inViewCountChanged();
+    void inUseCountChanged();
 
 public slots:
     void clearModel();

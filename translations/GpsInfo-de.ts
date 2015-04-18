@@ -47,6 +47,17 @@
     </message>
 </context>
 <context>
+    <name>SatellitesSignal</name>
+    <message>
+        <source>In View: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>In Use: </source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SecondPage</name>
     <message>
         <source>Nested Page</source>

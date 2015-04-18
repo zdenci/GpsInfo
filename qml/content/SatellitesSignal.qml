@@ -9,21 +9,51 @@ Rectangle {
     border.color: "#60F4F4F8"
     radius: 4
 
+    // horizontal lines to help vizualize percentage
+    Canvas {
+        anchors.fill: parent
+        onPaint: {
+            var ctx = getContext("2d");
+
+            ctx.strokeStyle = "#30F4F4F8";
+            ctx.lineWidth = 1;
+            for (var i = 1; i < 4; i++) {
+                ctx.moveTo(0, parent.height*i/4);
+                ctx.lineTo(parent.width, parent.height*i/4);
+                ctx.stroke();
+            }
+        }
+    }
+
+    Text {
+        text: qsTr("In View: ") + repeater.model.inViewCount
+        color: fontColor
+        anchors.top: parent.top
+        anchors.left: parent.left
+        anchors.leftMargin: 8
+    }
+    Text {
+        text: qsTr("In Use: ") + satModel.inUseCount
+        color: fontColor
+        anchors.top: parent.top
+        anchors.right: parent.right
+        anchors.rightMargin: 8
+    }
+
+
     property int satSpacing: 4
     property int satCount: 12
 
-    SatellitesInfoModel {
-        id: satModel
-    }
-
     Row {
         id: row
+        anchors.fill: parent
         spacing: satSpacing
 
         Repeater {
             id: repeater
-            model: satModel
-//            model: SatellitesInfoModel {}
+            model: SatellitesInfoModel {
+                id: satModel
+            }
 //            width: rec.width/satCount - satSpacing
             height: row.height
 

@@ -2,13 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
-    <name>CoverPage</name>
-    <message>
-        <source>Gps Info</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>GpsStatus</name>
     <message>
         <source>Latitude: </source>

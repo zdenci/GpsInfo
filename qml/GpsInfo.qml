@@ -5,6 +5,9 @@ import "content"
 
 ApplicationWindow
 {
+    id: app
+    property string sharedValue: ""
+
     initialPage: Component { MainPage{} }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
 //    initialPage: Component { FirstPage { } }

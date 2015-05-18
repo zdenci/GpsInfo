@@ -8,6 +8,8 @@
 class CLocationObserver
 {
 private:
+    QObject* m_pQmlObj;
+
     QObject* m_pLat;
     QObject* m_pLon;
     QObject* m_pAlt;

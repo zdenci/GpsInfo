@@ -19,7 +19,8 @@ QT += positioning
 SOURCES += src/GpsInfo.cpp \
     src/LocationService.cpp \
     src/LocationObserver.cpp \
-    src/SatellitesInfoModel.cpp
+    src/SatellitesInfoModel.cpp \
+    src/GeoCoordinates.cpp
 
 OTHER_FILES += qml/GpsInfo.qml \
     qml/cover/CoverPage.qml \
@@ -51,5 +52,6 @@ HEADERS += \
     src/LocationService.h \
     src/LocationObserver.h \
     src/LocationInfo.h \
-    src/SatellitesInfoModel.h
+    src/SatellitesInfoModel.h \
+    src/GeoCoordinates.h
 

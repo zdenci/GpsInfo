@@ -7,10 +7,6 @@
         <source>My Cover</source>
         <translation type="vanished">Mein Cover</translation>
     </message>
-    <message>
-        <source>Gps Info</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>FirstPage</name>

@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
     QScopedPointer<QGuiApplication> pApp(SailfishApp::application(argc, argv));
     QScopedPointer<QQuickView> pView(SailfishApp::createView());
 
-    qmlRegisterType<CSatellitesInfoModel>("com.zdeno", 1, 0, "SatellitesInfoModel");
+    qmlRegisterType<CSatellitesInfoModel>("harbour.gpsinfo", 1, 0, "SatellitesInfoModel");
 //    qmlRegisterType<CSatellitesInfoModel>("com.zdeno", 1, 0, "SatellitesPosModel");
 
     pView->setSource(SailfishApp::pathTo("qml/GpsInfo.qml"));

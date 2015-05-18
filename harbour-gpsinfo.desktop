@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 X-Nemo-Application-Type=silica-qt5
-Icon=GpsInfo
-Exec=GpsInfo
+Icon=harbour-gpsinfo
+Exec=harbour-gpsinfo
 Name=GpsInfo
 # translation example:
 # your app name in German locale (de)

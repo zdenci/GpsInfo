@@ -10,7 +10,7 @@
 #   - translation filenames have to be changed
 
 # The name of your application
-TARGET = GpsInfo
+TARGET = harbour-gpsinfo
 
 CONFIG += sailfishapp
 
@@ -24,11 +24,7 @@ SOURCES += src/GpsInfo.cpp \
 
 OTHER_FILES += qml/GpsInfo.qml \
     qml/cover/CoverPage.qml \
-    rpm/GpsInfo.changes.in \
-    rpm/GpsInfo.spec \
-    rpm/GpsInfo.yaml \
     translations/*.ts \
-    GpsInfo.desktop \
     qml/content/GpsStatus.qml \
     qml/content/SatellitesPosition.qml \
     qml/images/sat.png \
@@ -36,7 +32,11 @@ OTHER_FILES += qml/GpsInfo.qml \
     qml/pages/MainPage.qml \
     qml/values/Constants.qml \
     qml/images/satInUse.png \
-    qml/images/satInView.png
+    qml/images/satInView.png \
+    rpm/harbour-gpsinfo.spec \
+    harbour-gpsinfo.desktop \
+    rpm/harbour-gpsinfo.yaml \
+    rpm/harbour-gpsinfo.changes.in
 
 # to disable building translations every time, comment out the
 # following CONFIG line

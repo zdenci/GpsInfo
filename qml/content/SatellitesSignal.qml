@@ -1,5 +1,5 @@
 import QtQuick 2.0
-import com.zdeno 1.0
+import harbour.gpsinfo 1.0
 
 Rectangle {
     id: rec
